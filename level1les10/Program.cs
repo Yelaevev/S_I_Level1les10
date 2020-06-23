@@ -153,7 +153,7 @@ namespace Level1Space
                     else Answer = Answer.Insert(0, Convert.ToString(s2[s2.Length - i]));
                 }
             }
-            Console.WriteLine(Answer);
+            //Console.WriteLine(Answer);
             for (int i = 0; i < Answer.Length-1; i++)
             {
                 if (Answer[i] != '0') break; 
@@ -163,24 +163,27 @@ namespace Level1Space
                     
                 } 
             }
+            Answer = Answer.Remove(Answer.Length - 1, 1);
 
             return Answer;
         }
 
         //static void Main(string[] args)
         //{
-        //    string s2 = "1234567891";
-        //    string s1 = "1234567890";
+        //    string s1 = "1234567891";
+        //    string s2 = "1";
+        //    Console.WriteLine(s1 + "=значение первой строки");
+        //    Console.WriteLine(s2 + "=значение второй строки");
         //    double d1 = Convert.ToDouble(s1);
         //    double d2 = Convert.ToDouble(s2);
         //    d1 = d1 - d2;
 
         //    string Answer = BigMinus(s1, s2);
-        //    Console.WriteLine(Answer);
-        //    Answer = Answer.Remove(Answer.Length - 1, 1);
-        //    Console.WriteLine(Answer);
-        //    Console.WriteLine(d1 + "=разность");
-        //    Console.WriteLine(Answer[Answer.Length-1]);
+        //    //Console.WriteLine(Answer);
+        //    //Answer = Answer.Remove(Answer.Length - 1, 1);
+        //    Console.WriteLine(Answer + "=BigMinus");
+        //    Console.WriteLine(d1 + "=проверка разности через double");
+        //    Console.WriteLine(Answer[Answer.Length - 1] + "= последний элемент проверка на ");
         //}
     }
 }
