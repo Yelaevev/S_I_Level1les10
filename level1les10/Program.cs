@@ -153,9 +153,15 @@ namespace Level1Space
                     else Answer = Answer.Insert(0, Convert.ToString(s2[s2.Length - i]));
                 }
             }
-            for (int i = 0; i < Answer.Length; i++)
+            Console.WriteLine(Answer);
+            for (int i = 0; i < Answer.Length-1; i++)
             {
-                while (Answer[i]=='0') Answer = Answer.Remove(i, 1);
+                if (Answer[i] != '0') break; 
+                while (Answer[i] == '0') 
+                {
+                    Answer = Answer.Remove(i, 1);
+                    
+                } 
             }
 
             return Answer;
@@ -163,8 +169,8 @@ namespace Level1Space
 
         //static void Main(string[] args)
         //{
-        //    string s2 = "12324";
-        //    string s1 = null;
+        //    string s2 = "1234567891";
+        //    string s1 = "1234567890";
         //    double d1 = Convert.ToDouble(s1);
         //    double d2 = Convert.ToDouble(s2);
         //    d1 = d1 - d2;
@@ -174,7 +180,7 @@ namespace Level1Space
         //    Answer = Answer.Remove(Answer.Length - 1, 1);
         //    Console.WriteLine(Answer);
         //    Console.WriteLine(d1 + "=разность");
-        //    // Console.WriteLine(Answer[Answer.Length-1]);
+        //    Console.WriteLine(Answer[Answer.Length-1]);
         //}
     }
 }
