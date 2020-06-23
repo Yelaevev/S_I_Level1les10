@@ -161,20 +161,20 @@ namespace Level1Space
             return Answer;
         }
 
-        static void Main(string[] args)
-        {
-            string s2 = "12324";
-            string s1 = null;
-            double d1 = Convert.ToDouble(s1);
-            double d2 = Convert.ToDouble(s2);
-            d1 = d1 - d2;
+        //static void Main(string[] args)
+        //{
+        //    string s2 = "12324";
+        //    string s1 = null;
+        //    double d1 = Convert.ToDouble(s1);
+        //    double d2 = Convert.ToDouble(s2);
+        //    d1 = d1 - d2;
 
-            string Answer = BigMinus(s1, s2);
-            Console.WriteLine(Answer);
-            Answer = Answer.Remove(Answer.Length - 1, 1);
-            Console.WriteLine(Answer);
-            Console.WriteLine(d1 + "=разность");
-            // Console.WriteLine(Answer[Answer.Length-1]);
-        }
+        //    string Answer = BigMinus(s1, s2);
+        //    Console.WriteLine(Answer);
+        //    Answer = Answer.Remove(Answer.Length - 1, 1);
+        //    Console.WriteLine(Answer);
+        //    Console.WriteLine(d1 + "=разность");
+        //    // Console.WriteLine(Answer[Answer.Length-1]);
+        //}
     }
 }
